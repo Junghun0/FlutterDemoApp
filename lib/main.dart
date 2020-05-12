@@ -46,8 +46,11 @@ class __TabPageStateState extends State<_TabPageState> {
     return Scaffold(
       body: Center(child: _pages[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
-          fixedColor: Colors.black,
+          fixedColor: Colors.pinkAccent,
+          backgroundColor: Colors.white,
+          unselectedItemColor: Colors.black,
           onTap: _onItemTapped,
+          type: BottomNavigationBarType.fixed,
           currentIndex: _selectedIndex,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
