@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttersampleappjunghoon/view/ListViewType01.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -35,6 +36,7 @@ Widget _myListView(BuildContext context) {
       ListTile(
         title: Text('Star'),
       ),
+      ListViewType01()
     ],
   );
 }
