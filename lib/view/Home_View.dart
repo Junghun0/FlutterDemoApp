@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersampleappjunghoon/view/ListViewType01.dart';
+import 'package:fluttersampleappjunghoon/viewtype/ListViewType01.dart';
 
 class HomeView extends StatefulWidget {
   @override
