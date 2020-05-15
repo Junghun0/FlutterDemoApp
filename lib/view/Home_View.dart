@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttersampleappjunghoon/viewtype/ListViewType01.dart';
+import 'package:fluttersampleappjunghoon/viewtype/ListViewType02.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -13,6 +14,18 @@ class _HomePageState extends State<HomeView> {
   }
 }
 
+var _container = Container(
+  height: 200,
+  color: Colors.brown,
+  margin: EdgeInsets.symmetric(vertical: 10),
+);
+
+var _container2 = Container(
+  height: 200,
+  color: Colors.cyan,
+  margin: EdgeInsets.symmetric(vertical: 10),
+);
+
 class BodyLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,5 +34,22 @@ class BodyLayout extends StatelessWidget {
 }
 
 Widget _myListView(BuildContext context) {
-  return ListViewType01();
+  return Scaffold(
+    body: Padding(
+      padding: const EdgeInsets.all(40.0),
+      child: ListView(
+        children: <Widget>[
+          _container,
+          _container2,
+          Container (
+            height: 200,
+            child: ListViewType01(),
+          ),
+          _container2,
+          ListViewType02(),
+          _container
+        ],
+      ),
+    ),
+  );
 }
