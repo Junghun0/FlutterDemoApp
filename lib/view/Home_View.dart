@@ -15,7 +15,7 @@ class _HomePageState extends State<HomeView> {
 }
 
 var _container = Container(
-  height: 200,
+  height: 150,
   color: Colors.brown,
   margin: EdgeInsets.symmetric(vertical: 10),
 );
@@ -42,7 +42,7 @@ Widget _myListView(BuildContext context) {
           _container,
           _container2,
           Container (
-            height: 200,
+            height: 300,
             child: ListViewType01(),
           ),
           _container2,
